@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://rawgit.com/allensarkisyan/VideoFrame/master/VideoFrame.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="miDiv" style="height: 300px; overflow-y: scroll; border: solid;">
+        <!-- Contenido del div -->
+        <div id="info"> 
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+            <p> hola wachin </p>
+        </div>
+        <lottie-player id="miLottie" src="../Lotties/animacion-90-años.json" background="transparent" speed="0.3" style="width: 300px; height: 300px;"></lottie-player>
+      </div>
+
+      <style>
+        #miDiv{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+        }
+        #miLottie{
+            margin-top: -1.5em;
+        }
+        #info{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            width: 80em;
+            height: 270px; 
+            overflow-y: scroll; 
+            border: solid;
+        }
+      </style>
+      
+      <script>
+
+$(document).ready(function(){
+      const info = document.getElementById("info");
+      const video = document.getElementById("miLottie");
+      
+
+       $(info).scroll(function(){
+       let pixel = $(info).scrollTop();
+
+       console.log({pixel});
+
+       video.seek(pixel/10)
+    
+      });
+     });
+  
+
+
+      </script>
+      
+</body>
+</html>
