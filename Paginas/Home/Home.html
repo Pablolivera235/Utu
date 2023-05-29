@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link id="icon" rel="shortcut icon" href="../../icono.png" />
+  <title>Escuela Técnica de Trinidad</title>
+  <style>
+    /* CSS de la waitscreen (pantalla de espera) */
+    .wait-screen {
+      display: none; 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+      opacity: 100%;
+    }
+
+    .wait-screen-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wait-screen">
+    <div class="wait-screen-message">
+      <!-- para cambiar el mensaje de la pantalla de epera --> 
+      <lottie-player autoplay loop src="../../Lotties/waitscreen.json" background="transparent"
+        speed="0.8"></lottie-player>
+    </div>
+  </div>
+
+  <head id="head">
+    
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://rawgit.com/allensarkisyan/VideoFrame/master/VideoFrame.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../LogoWebVersion.png">
+    <link rel="stylesheet" href="./style.css">
+    
+
+    <nav id="nav">
+        <h1 id="h1"> Escuela Técnica de Trinidad </h1>
+        <ul id="ulnav">
+            <li id="home"><a> Home </a></li>
+            <li class="li"><a href="../../Paginas/+Info/info.html"> +Info </a></li>
+            <li class="li" id="repre"><a href="../Representantes/repre.html"> Representantes </a></li>
+            <li class="li" id="cursos"><a href="../Cursos/cursos.html"> Cursos </a></li>
+            <li class="li"><a href=""> Recorrido</a></li>
+        </ul>
+    </nav>
+
+</head>
+
+<body id="body">
+
+
+    <lottie-player id="miLottie" src="../../Lotties/90a-lottie.json" background="transparent"
+        speed="1000"></lottie-player>
+    <div id="fundacion"></div>
+
+    <!-- <img src="./Fotos/fundacion(editada).jpeg" alt="">-->
+    <style>
+        #fund {
+            opacity: 1;
+        }
+    </style>
+
+    <script src="./script.js"></script>
+
+</body>
+<!--codigo js para el waitscreen (pantalla de espera)-->
+
+  <script>
+    function showWaitScreen() {
+      document.querySelector('.wait-screen').style.display = 'block';
+    }
+
+    function hideWaitScreen() {
+      document.querySelector('.wait-screen').style.display = 'none';
+    }
+
+    showWaitScreen();
+
+
+    setTimeout(function() {
+      hideWaitScreen();
+    }, 4000); //cambiar el tiempo de espera
+  </script>
+</body>
+</html>
+
+
+
+
+</html>
