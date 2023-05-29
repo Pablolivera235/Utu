@@ -9,6 +9,58 @@
     zoom: 90%;
 }
 
+#fund {
+    border-radius: 1.5em;
+}
+
+#infofund{
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+
+#fundimdiv{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5em;
+    height: 25.5em;
+    overflow-y: scroll;
+    font-family: "SFPRO"
+}
+#fundimdiv::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    max-height: 20px;
+}
+
+#fundimdiv::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#fundimdiv::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    width:0.5px; 
+    margin-top: 8.5em;
+}
+
+#untt{
+    font-family: "SFPRO";
+    font-size: 3em;
+    margin-right: 10%;
+    width: fit-content;
+}
+
+
+
+
+#fundacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 #head {
@@ -140,5 +192,6 @@ nav {
 @font-face {
     color: blue;
     font-family: "SFPRO";
-    src: url("../Fonts/SFPRODISPLAYBOLD.OTF");
+    src: url("../../Fuentes/SFPRODISPLAYBOLD.OTF");
 }
+
