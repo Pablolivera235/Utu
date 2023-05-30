@@ -8,7 +8,7 @@ $(window).scroll(function () {
 
    console.log({ pixel });
 
-   video.seek(pixel / 5)
+   video.seek(pixel / 2)
 
 
    //pixel 590 de scroll para poner la foto
@@ -33,9 +33,11 @@ $(window).scroll(function () {
       var desiredScrollPosition = 120;
       var currentScrollPosition = window.pageYOffset;
 
-      if (currentScrollPosition >= desiredScrollPosition && currentScrollPosition > previousScrollPosition) {
+      if (currentScrollPosition >= desiredScrollPosition) {
         element.classList.add('animate');
-      } else {
+      } 
+      
+      else if(currentScrollPosition <= desiredScrollPosition) {
         element.classList.remove('animate');
       }
 
