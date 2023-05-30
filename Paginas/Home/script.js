@@ -35,10 +35,12 @@ $(window).scroll(function () {
 
       if (currentScrollPosition >= desiredScrollPosition) {
         element.classList.add('animate');
+        opacity = 1
       } 
       
       else if(currentScrollPosition <= desiredScrollPosition) {
         element.classList.remove('animate');
+        opacity = 0
       }
 
       previousScrollPosition = currentScrollPosition;
