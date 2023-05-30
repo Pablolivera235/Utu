@@ -149,24 +149,18 @@ a:visited {
 #nav {
     font-weight: bolder;
     font-family: "SF-Pro";
-    margin-top: 1em;
     font-weight: bolder;
     font-family: "SFPRO";
+    font-size: 1.3rem;
     border-radius: 1em;
-    /*border: solid;
-border-top: transparent;
-border-left: transparent;
-border-right: transparent;
-*/
-}
-
-nav {
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+    height: 3em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
-    top: 1em;
-    height: 1em;
+    top: 0.000000001px;
 }
 
 #home {
