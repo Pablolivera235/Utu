@@ -8,7 +8,7 @@ $(window).scroll(function () {
 
    console.log({ pixel }); // muestra la cantidad de pixeles desde el principio de la ventana hasta donde esté la barra de scroll por consola
 
-   video.seek(pixel / 2) // Toma la cantidad de fotogramas del Lottie(animacion en formato json) y hace que la aniacion corra 2 veces mas lento
+   video.seek(pixel / 5) // Toma la cantidad de fotogramas del Lottie(animacion en formato json) y hace que la aniacion corra 2 veces mas lento
 
    var container = document.getElementById('fundacion');
 
