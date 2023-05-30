@@ -8,7 +8,7 @@ $(window).scroll(function () {
 
    console.log({ pixel });
 
-   video.seek(pixel / 2)
+   video.seek(pixel / 5)
 
 
    //pixel 590 de scroll para poner la foto
