@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+    --black: #000000;
+    --black-alpha: rgba(0, 0, 0, 0.2);
+    --white: #ffffff;
+    --hover-color: #ffffff;
+    --yellow: #ffff00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+
+    
+    /* falta implementar de nuevo la fuente, deje una de google fonts. */
+    /* font-family: "SFPRO" */
+}
+
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 10px;
+    max-height: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    width: 0.5px;
+
+}
+
+body {
+    overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px var(--black-alpha);
+
+}
+
+ul.menu-items {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    list-style-type: none;
+}
+
+li.menu-item>a {
+    padding: 12px;
+}
+
+a,
+a:visited {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a.active {
+    background-color: var(--yellow);
+    border: 2px solid var(--black);
+
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: var(--black-alpha);
+}
+
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    scroll-snap-align: start;
+    height: 100vh;
+
+}
+
+/* Si queres ponerle algun efecto tipo a los que son impares */
+section:nth-child(odd) {
+}
+
+/* Si queres ponerle algun efecto tipo a los que son pares */
+section:nth-child(even) {
+}
+
+img.noventa {
+    height: 95%;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    width: 85%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: white;
+    filter: drop-shadow(2px 2px 5px #00000060);
+}
+
+
+
+
+
+/* ----------------------------------------- */
+
+
+.fundimdiv {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5em;
+    height: 80%;
+    width: 50%;
+    /* Este padding de abajo sirve para que no se coma parte de las palabras al hacer el scroll */
+    padding: 14px;
+    overflow-y: scroll;
+
+}
+
