@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary</title>
+</head>
+<body>
+    <div id="miDiv" style="height: 300px; overflow-y: scroll; border: solid;">
+        <!-- Contenido del div -->
+        <div id="info"> 
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+            <p> hola micro si mister  pero esto es algo distintomini wichin</p>
+        </div>    
+    </div>
+    <img id="imag90" src="../Aminacion_60fps/0001.png" alt=""> <!-- esto es mi coso no tocar a no ser que las mejores pero con mi previa autorizacion...-->
+</body>
+<script>
+
+$(document).ready(function(){
+      const info = document.getElementById("info");
+      //const video = document.getElementById("miLottie");
+      
+
+       $(info).scroll(function(){
+       let pixel = $(info).scrollTop();
+
+       console.log({pixel});
+
+       video.seek(pixel/10)
+
+       
+   imgX = '../Aminacion_60fps/'+'000'+pixel+'.png';
+    
+      });
+     });
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slide-in {
+      transform: translateX(-100%);
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide-in.animate {
+      transform: translateX(0%);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-in">This element will slide in from left to right when scrolled into view</div>
+
+  <script>
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function handleScroll() {
+      var element = document.querySelector('.slide-in');
+      if (isElementInViewport(element)) {
+        element.classList.add('animate');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  </script>
+</body>
+</html>

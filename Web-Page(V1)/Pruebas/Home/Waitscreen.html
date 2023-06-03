@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bones Wait Screen</title>
+  <style>
+    /* CSS for the wait screen */
+    .wait-screen {
+      display: none; /* Hide the wait screen initially */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+      opacity: 0.9;
+    }
+
+    .wait-screen-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Example Page</h1>
+
+  <div class="wait-screen">
+    <div class="wait-screen-message">
+      <!-- You can customize the message here -->
+      Please wait...
+    </div>
+  </div>
+
+  <!-- Your page content goes here -->
+
+  <script>
+    // JavaScript to show/hide the wait screen
+    function showWaitScreen() {
+      document.querySelector('.wait-screen').style.display = 'block';
+    }
+
+    function hideWaitScreen() {
+      document.querySelector('.wait-screen').style.display = 'none';
+    }
+
+    // Example usage
+    showWaitScreen();
+
+    // Simulate a delay
+    setTimeout(function() {
+      hideWaitScreen();
+    }, 3000); // Change the delay time as needed
+  </script>
+</body>
+</html>
