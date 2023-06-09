@@ -49,7 +49,7 @@ $(window).scroll(function () {
 
     window.addEventListener('scroll', controlarscroll);
 
-    let vid = document.getElementById("nta");
+    let vid = document.getElementById("video-noventa");
     vid.playbackRate = 0.45;
 
 });
