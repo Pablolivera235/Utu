@@ -229,6 +229,12 @@ section{
         }
       }
 
+      ul{
+        position: fixed;
+        bottom: 1em;
+        width: 3rem;
+      }
+
 }
 
 @media (max-width: 519px),(min-width: 678) {
@@ -265,6 +271,12 @@ section{
         display: flex;
         justify-content: space-around;
     }
+
+    ul{
+        position: fixed;
+        bottom: 1em;
+        width: 3rem;
+      }
    
 }
 
@@ -298,5 +310,9 @@ section{
         }
       }
 
-   
+      ul{
+        position: fixed;
+        bottom: 1em;
+        width: 3rem;
+      }
 }
