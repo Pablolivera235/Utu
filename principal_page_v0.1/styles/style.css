@@ -1,0 +1,37 @@
+.menu_principal>nav>ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.menu_principal>nav>ul>li{
+    margin-left: 3em;
+}
+
+.menu_principal>nav>ul>li>a>img{
+    width: 30px;
+    height: 20px;
+}
+.imagenes_corte{
+    display: flex;
+    justify-content: center;
+}
+.imagenes_corte>img{
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.imagenes_corte>img:hover{
+    animation: 1s linear 0s forwards cliper;
+}
+
+@keyframes cliper {
+    from{
+        width: 200px;
+        height: 200px;
+    }
+    to{
+        clip-path: none;
+        width: 777px;
+        height: 300px;
+    }
+}
