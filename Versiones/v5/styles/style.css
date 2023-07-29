@@ -26,19 +26,48 @@ nav {
     justify-content: center;
 }
 
+#inicio{
+    margin-left: 1rem;
+}
+
+#cursos{
+    margin-right: 1rem;
+}
+
 nav>ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
     list-style-type: none;
+    gap: 0.5rem;
 }
 
-nav>ul>li {
-    margin-left: 3em;
+#contenedor_cursos>h1{
+    padding: 3rem;
+    font-weight: bold;
+}
+
+nav>ul>li{
+    padding: 0.7rem;
+}
+
+nav>ul>li>button{
     list-style: none;
     border: solid;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    background:none;
+    font-weight: bold;
+}
+
+nav>ul>li>button:hover{
+    color: #000000;
+    border: solid;
+    border-color: rgb(48, 101, 216);
 }
 
 nav>ul>li>a>img {
@@ -48,7 +77,9 @@ nav>ul>li>a>img {
 
 nav>ul>li>a{
    text-decoration: none;
+   color: black;
 }
+
 
 .imagenes_corte {
     display: flex;
