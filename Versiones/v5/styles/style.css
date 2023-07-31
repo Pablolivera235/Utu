@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +26,10 @@ nav {
     height: 4rem;
     position: sticky;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
 }
 
 #inicio{
@@ -36,12 +42,8 @@ nav {
 
 nav>ul{
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: solid;
     border-radius: 1rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
     list-style-type: none;
     gap: 0.5rem;
 }
@@ -49,6 +51,7 @@ nav>ul{
 #contenedor_cursos>h1{
     padding: 3rem;
     font-weight: bold;
+    font-family: 'Hubot-Sans';
 }
 
 nav>ul>li{
@@ -59,15 +62,18 @@ nav>ul>li>button{
     list-style: none;
     border: solid;
     border-radius: 0.5rem;
+    border-color: transparent;
     padding: 1rem;
     background:none;
     font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Hubot-Sans';
 }
 
 nav>ul>li>button:hover{
     color: #000000;
     border: solid;
-    border-color: rgb(48, 101, 216);
+    border-color: rgb(0, 0, 0);
 }
 
 nav>ul>li>a>img {
@@ -122,9 +128,6 @@ nav>ul>li>a{
     height: 3rem;
 }
 
-#li-logo{
-    border: none;
-}
 
 #primera{
     margin-left: 2.8rem;
@@ -133,8 +136,8 @@ nav>ul>li>a{
 #descripcion-seccion1{
     margin-top: 3.5rem;
     z-index: 999;
-    font-weight: bolder;
-    font-family: fantasy;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
 }
 #curos_img{
     width: 10em;
@@ -210,8 +213,8 @@ nav>ul>li>a{
         background-image: url(../img/Cursos_iconos/Administracion.png);
         background-position: center;
         background-size: cover;
-        font-weight: bolder;
-        font-family: fantasy;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
         border: solid;
         border-radius: 100%;
     }
@@ -220,9 +223,10 @@ nav>ul>li>a{
         opacity: 0;
         transform: scale(0);
         transition: 0.8s;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(0, 0, 0);
     }
+
 
     #cursos_img_admin:hover{
         box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
@@ -245,8 +249,8 @@ nav>ul>li>a{
         background-image: url(../img/Cursos_iconos/Deporte.png);
         background-position: center;
         background-size: cover;
-        font-weight: bolder;
-        font-family: fantasy;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
         border: solid;
         border-radius: 100%;
     }
@@ -255,7 +259,7 @@ nav>ul>li>a{
         opacity: 0;
         transform: scale(0);
         transition: 0.8s;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(0, 0, 0);
     }
 
@@ -280,8 +284,8 @@ nav>ul>li>a{
         background-image: url(../img/Cursos_iconos/Turismo.png);
         background-position: center;
         background-size: cover;
-        font-weight: bolder;
-        font-family: fantasy;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
         border: solid;
         border-radius: 100%;
     }
@@ -290,7 +294,7 @@ nav>ul>li>a{
         opacity: 0;
         transform: scale(0);
         transition: 0.8s;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(0, 0, 0);
     }
 
@@ -315,8 +319,8 @@ nav>ul>li>a{
         background-image: url(../img/Cursos_iconos/Informatica.png);
         background-position: center;
         background-size: cover;
-        font-weight: bolder;
-        font-family: fantasy;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
         border: solid;
         border-radius: 100%;
     }
@@ -325,7 +329,7 @@ nav>ul>li>a{
         opacity: 0;
         transform: scale(0);
         transition: 0.8s;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(0, 0, 0);
     }
 
