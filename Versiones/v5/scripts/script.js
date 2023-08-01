@@ -1,4 +1,5 @@
 const images = document.querySelectorAll('.inicioimagenes');
+const bkgsec1 = document.querySelectorAll('.cont_img_sec1');
 
 images.forEach((image) => {
     image.addEventListener('mouseenter', () => {
@@ -8,6 +9,11 @@ images.forEach((image) => {
         image.classList.add('hovered');
     });
 });
+
+
+
+
+
 
 // pantalla de carga inicio
 
@@ -30,3 +36,8 @@ function showWaitScreen() {
 
 // pantalla de carga fin
 
+//redireccinoamiento
+
+function redireccionarPagina(link) {
+  window.location = link;
+}

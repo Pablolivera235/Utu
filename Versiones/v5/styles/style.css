@@ -19,6 +19,21 @@ body{
     display: flex;
     justify-content: top;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+#container_img_section1>div>button{
+    font-family: 'Hubot-Sans';
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius:.5rem;
+    border: solid;
+    background-color: transparent;
+}
+
+#container_img_section1>div>button:hover{
+    background-color: rgba(196, 196, 196, 0.726);
 }
 
 nav {
@@ -87,20 +102,44 @@ nav>ul>li>a{
 }
 
 
+#container_img_section1{
+    display: flex;
+    border: solid;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -5rem;
+    z-index: 9;
+    background-image: url('../img/planos.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#blured{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+}
+
 .imagenes_corte {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -4.5rem;
 }
 
 .inicioimagenes {
-    width: 200px;
-    height: 200px;
-    margin-left: -2.8rem;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 11rem;
+    height: 14rem;
     transition: transform 0.3s ease;
     border-radius: 20px;
+    margin-left: .1rem;
 }
 
 .inicioimagenes.hovered {
@@ -110,17 +149,27 @@ nav>ul>li>a{
     z-index: 1;
     border: solid;
     border-width: 2px;
+    width: 16rem;
+    height: 14rem;
 }
 
 .imagenes_corte:hover .inicioimagenes:not(.hovered) {
     opacity: 0.7;
     transform: none; 
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    border: solid;
+    
 }
 
 .imagenes_corte:not(:hover) .inicioimagenes {
     transform: scale(1); 
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    border: none;
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    border: solid;
+    width: 11rem;
 }
 
 #logo{
@@ -193,8 +242,8 @@ nav>ul>li>a{
         left: 50%;
     }
     100%{
-        top: 5%;
-        left: 50%;
+        top: 4%;
+        left: 27%;
     }
 }
   /* pantalla de carga fin */

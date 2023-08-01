@@ -19,20 +19,25 @@
     <nav>
         <a href="./assets/index.html"><img src="./img/logo/Logo - Pablo Olivera.png" id="logo"></a>
         <ul >
-            <li><button href="editme">Historia</button></li>
-            <li><button href="editme"> UTU En Cifras</button></li>
-            <li id="cursos"><button href="editme">Cursos</button></li>
+            <li><button onclick="redireccionarPagina('./pages/historia.html')">Historia</button></li>
+            <li><button onclick="redireccionarPagina('./pages/utuencifras.html')"> UTU En Cifras</button></li>
+            <li id="cursos"><button onclick="redireccionarPagina('./pages/cursos.html')">Cursos</button></li>
         </ul>
     </nav>
     <section>
+        <div class="cont_img_sec1" id="container_img_section1">
+            <div id="blured">
         <div class="imagenes_corte">
-            <img id="primera" class="inicioimagenes" src="img/Actual.jpg" alt="utu_now">
+            <img class="inicioimagenes" src="img/Actual.jpg" alt="utu_now">
             <img class="inicioimagenes" src="img/foto_utugood.jpeg" alt="utu_old">
             <img class="inicioimagenes" src="img/foto_utu_degrad.jpeg" alt="utu_old_two">
             <img class="inicioimagenes" src="img/planos.jpeg" alt="utu_planos">
         </div>
-
         <h1 id="descripcion-seccion1"> Desde 1933: 90 Años educando al futuro </h1>
+        <br><br><br>
+        <button onclick="redireccionarPagina('./pages/historia.html')"> Aprender Más </button>
+        </div>
+        </div>
     </section>
 
     <section>
