@@ -35,7 +35,8 @@ body{
 }
 
 #container_img_section1>div>button:hover{
-    background-color: rgba(196, 196, 196, 0.726);
+    background-color: rgba(27, 148, 179, 0.726);
+    color: #000000;
 }
 
 nav {
