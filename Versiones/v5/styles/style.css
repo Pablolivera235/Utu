@@ -450,3 +450,27 @@ nav>ul>li>a{
     height: 1rem; 
 }
 
+#noticias-h2{
+    position: relative;
+    border-top: solid 5px #e7eae8;
+    font-size: 1.65em;
+    text-align: center;
+    margin: 0 0 3em 0;
+    top: 0.775em;
+    width: 50rem;
+    border-radius: 0.3rem;
+    font-family: 'hubot-sans';
+}
+
+#noticias-h2>span{
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    top: -0.775em;
+    padding: 0 1.25em 0 1.25em;
+}
+
+#encabezado-noticia-remodelacion{
+    font-family: 'hubot-sans';
+    font-size: 1rem;
+}
