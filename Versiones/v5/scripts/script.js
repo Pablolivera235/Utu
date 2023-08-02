@@ -12,9 +12,6 @@ images.forEach((image) => {
 
 
 
-
-
-
 // pantalla de carga inicio
 
 function showWaitScreen() {
@@ -27,8 +24,14 @@ function showWaitScreen() {
     document.querySelector('.wait-screen').style.display = 'none';
   }
 
-  showWaitScreen();
 
+  if (window.performance.navigation.type == window.performance.navigation.TYPE_RELOAD)
+  {
+
+  } else {
+    showWaitScreen();
+
+  }
 
   setTimeout(function() {
     hideWaitScreen();
@@ -36,7 +39,16 @@ function showWaitScreen() {
 
 // pantalla de carga fin
 
-//redireccinoamiento
+
+// al hacer clic en el logo, recarga la pagina sin la pantalla de carga
+
+document.getElementById("reiniciar").addEventListener("click", function(){
+  var cargando = document.querySelector('.wait-screen');
+  cargando.style.display = "none";
+  location.reload();
+});
+
+// redireccinoamiento
 
 function redireccionarPagina(link) {
   window.location = link;
