@@ -161,13 +161,17 @@ nav>ul>li>a{
 .inicioimagenes {
     width: 10rem;
     height: 10rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     border-radius: 20px;
     margin-left: .1rem;
     border: none;
 }
 
 .inicioimagenes.hovered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3.5rem;
     clip-path: none;
     border-radius: 1rem;
     transform: scale(2 , 1.5);
@@ -175,6 +179,7 @@ nav>ul>li>a{
     border-width: 2px;
     width: 19rem;
     height: 13rem;
+    transition: .2s;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     -o-transform: skew(15deg);
@@ -188,6 +193,7 @@ nav>ul>li>a{
     width: 13.5rem;
     margin-left: -2rem;
     height: 11rem;
+    transition: transform 0.5s ease;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     -o-transform: skew(15deg);
@@ -198,6 +204,7 @@ nav>ul>li>a{
     transform: scale(1); 
     width: 13.5rem;
     height: 11rem;
+    transition: transform 0.5s ease;
     margin-left: -2rem;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
@@ -213,6 +220,7 @@ nav>ul>li>a{
     width: 9rem;
     height: 11rem;
     transform: scale(1);
+    transition: transform 0.5s ease;
     -webkit-transform: skew(-15deg);
     -moz-transform: skew(-15deg);
     -o-transform: skew(-15deg);
