@@ -1,5 +1,6 @@
 const images = document.querySelectorAll('.inicioimagenes');
 const bkgsec1 = document.querySelectorAll('.cont_img_sec1');
+const divimg1 = document.getElementById("div-img-1");
 
 images.forEach((image) => {
     image.addEventListener('mouseenter', () => {
