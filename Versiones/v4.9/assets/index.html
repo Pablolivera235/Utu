@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Escuela Técnica Trinidad</title>
+
+</head>
+<body>
+
+    <nav>
+        <a href="./index.html"><img src="../img/logo/Logo - Pablo Olivera.png" id="logo"></a>
+        <ul >
+            <li><button onclick="redireccionarPagina('../pages/historia.html')">Historia</button></li>
+            <li><button onclick="redireccionarPagina('../pages/utuencifras.html')"> UTU En Cifras</button></li>
+            <li id="cursos"><button onclick="redireccionarPagina('../pages/cursos.html')">Cursos</button></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div class="imagenes_corte">
+            <img id="primera" class="inicioimagenes" src="../img/Actual.jpg" alt="utu_now">
+            <img class="inicioimagenes" src="../img/foto_utugood.jpeg" alt="utu_old">
+            <img class="inicioimagenes" src="../img/foto_utu_degrad.jpeg" alt="utu_old_two">
+            <img class="inicioimagenes" src="../img/planos.jpeg" alt="utu_planos">
+        </div>
+
+        <h1 id="descripcion-seccion1"> Desde 1933: 90 Años educando al futuro </h1>
+    </section>
+
+    <section>
+        <div id="contenedor_cursos">
+        <ul id="ul_cursos_img">
+        <li id="cursos_img_admin"><p> Administración</p></li>
+        <li id="cursos_img_deporte"><p> Deporte</p></li>
+        <li id="cursos_img_tur"><p> Turismo </p></li>
+        <li id="cursos_img_info"><p> Informática </p></li>
+        </ul>
+        <h1> Bachilleratos Disponibles</h1>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

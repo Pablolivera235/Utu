@@ -1,0 +1,432 @@
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+body{
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#container_img_section1>div>button{
+    font-family: 'Hubot-Sans';
+    font-weight: bold;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius:.5rem;
+    border: solid;
+    background-color: transparent;
+}
+
+#container_img_section1>div>button:hover{
+    background-color: rgba(196, 196, 196, 0.726);
+}
+
+nav {
+    display: flex;
+    height: 3rem;
+    position: sticky;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+}
+
+#inicio{
+    margin-left: 1rem;
+}
+
+#cursos{
+    margin-right: 1rem;
+}
+
+nav>ul{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+
+#contenedor_cursos>h1{
+    padding: 3rem;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+}
+
+nav>ul>li{
+    padding: 0.7rem;
+}
+
+nav>ul>li>button{
+    list-style: none;
+    border: solid;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    padding: .8rem;
+    background:none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    font-family: 'Hubot-Sans';
+}
+
+nav>ul>li>button:hover{
+    color: #000000;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+nav>ul>li>a>img {
+    width: 30px;
+    height: 20px;
+}
+
+nav>ul>li>a{
+   text-decoration: none;
+   color: black;
+}
+
+
+#container_img_section1{
+    display: flex;
+    border: solid;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -5rem;
+    z-index: 9;
+    background-image: url('../img/planos.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#blured{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+}
+
+.imagenes_corte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicioimagenes {
+    width: 8rem;
+    height: 10rem;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    margin-left: .1rem;
+}
+
+.inicioimagenes.hovered {
+    clip-path: none;
+    border-radius: 1rem;
+    transform: scale(2 , 1.5);
+    z-index: 1;
+    border: solid;
+    border-width: 2px;
+    width: 12rem;
+    height: 10rem;
+}
+
+.imagenes_corte:hover .inicioimagenes:not(.hovered) {
+    opacity: 0.7;
+    transform: none; 
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    border: solid;
+    height: 10rem;
+    
+}
+
+.imagenes_corte:not(:hover) .inicioimagenes {
+    transform: scale(1); 
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    border: solid;
+    width: 8rem;
+}
+
+#logo{
+    width: 4.3rem;
+    height: 2.5rem;
+}
+
+
+#primera{
+    margin-left: 2.8rem;
+}
+
+#descripcion-seccion1{
+    margin-top: 3.5rem;
+    z-index: 999;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+    font-size: 1.35rem;
+}
+#curos_img{
+    width: 10em;
+}
+
+#ul_cursos_img{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+/* pantalla de carga inicio */
+
+.wait-screen {
+    display: none; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    opacity: 100%;
+  }
+
+  .wait-screen-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo_pantalla_de_carga{
+    width: 35rem;
+    height: 20rem;
+ }
+
+ @keyframes cliper {
+    30%{
+        width: 35rem;
+        height: 20rem;
+    }
+    100%{
+        width: 5rem;
+        height: 3rem;
+    }
+}
+
+@keyframes moveup {
+    30%{
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        top: 4%;
+        left: 27%;
+    }
+}
+  /* pantalla de carga fin */
+
+  /* hovers de los cursos inicio*/
+
+                                            /* Administración */
+
+    #cursos_img_admin{
+        width:10em;
+        height: 10em;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/Cursos_iconos/Administracion.png);
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
+        border: solid;
+        border-radius: 100%;
+    }
+
+    #cursos_img_admin p{
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+    }
+
+
+    #cursos_img_admin:hover{
+        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+    }
+
+    #cursos_img_admin:hover p{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+                                                /* Deporte */
+
+    #cursos_img_deporte{
+        width:10em;
+        height: 10em;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/Cursos_iconos/Deporte.png);
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
+        border: solid;
+        border-radius: 100%;
+    }
+
+    #cursos_img_deporte p{
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+    }
+
+    #cursos_img_deporte:hover{
+        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+    }
+
+    #cursos_img_deporte:hover p{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+                                                /* Turismo */
+
+    #cursos_img_tur{
+        width:10em;
+        height: 10em;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/Cursos_iconos/Turismo.png);
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
+        border: solid;
+        border-radius: 100%;
+    }
+
+    #cursos_img_tur p{
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+    }
+
+    #cursos_img_tur:hover{
+        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+    }
+
+    #cursos_img_tur:hover p{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+                                                /* Informática */
+
+    #cursos_img_info{
+        width:10em;
+        height: 10em;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/Cursos_iconos/Informatica.png);
+        background-position: center;
+        background-size: cover;
+        font-weight: bold;
+        font-family: 'Hubot-Sans';
+        border: solid;
+        border-radius: 100%;
+    }
+
+    #cursos_img_info p{
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+    }
+
+    #cursos_img_info:hover{
+        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+    }
+
+    #cursos_img_info:hover p{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+  /* hovers de los cursos fin*/
+
+  #container-noticias{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    width: auto;
+    height: auto;
+  }
+
+  #containers-de-containers-noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14rem;
+    height: 18rem;
+    /* border: solid;
+    border-radius: 1rem; */
+  }
+
+  #containers-de-containers-noticias>div{
+    border: solid;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 10em;
+  }
+
+  #contenedor-de-secciones{
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+

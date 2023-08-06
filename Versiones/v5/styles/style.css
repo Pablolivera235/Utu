@@ -72,6 +72,10 @@ nav>ul{
     font-family: 'Hubot-Sans';
 }
 
+#seccion-cursos{
+    background-color: lightblue;
+}
+
 nav>ul>li{
     padding: 0.7rem;
 }
@@ -126,7 +130,7 @@ nav>ul>li>a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
     width: 100%;
     height: 100%;
 }
@@ -257,6 +261,13 @@ nav>ul>li>a{
     gap: 1.5rem;
 }
 
+#ul_cursos_img>div{
+    border-radius: 150px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  9px 9px 18px #b1b1b1,
+                 -9px -9px 18px #ffffff;
+}
+
 /* pantalla de carga inicio */
 
 .wait-screen {
@@ -317,12 +328,11 @@ nav>ul>li>a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/Cursos_iconos/Administracion.png);
+        background-image: url(../img/Cursos_iconos/administracion_nuevo_transparente.png);
         background-position: center;
         background-size: cover;
         font-weight: bold;
         font-family: 'Hubot-Sans';
-        border: solid;
         border-radius: 100%;
     }
 
@@ -353,12 +363,11 @@ nav>ul>li>a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/Cursos_iconos/Deporte.png);
+        background-image: url(../img/Cursos_iconos/deporte_nuevo_transparente.png);
         background-position: center;
         background-size: cover;
         font-weight: bold;
         font-family: 'Hubot-Sans';
-        border: solid;
         border-radius: 100%;
     }
 
@@ -388,12 +397,11 @@ nav>ul>li>a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/Cursos_iconos/Turismo.png);
+        background-image: url(../img/Cursos_iconos/turismo_nuevo_transparente.png);
         background-position: center;
         background-size: cover;
         font-weight: bold;
         font-family: 'Hubot-Sans';
-        border: solid;
         border-radius: 100%;
     }
 
@@ -423,12 +431,11 @@ nav>ul>li>a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/Cursos_iconos/Informatica.png);
+        background-image: url(../img/Cursos_iconos/informatica_nuevo_transparente.png);
         background-position: center;
         background-size: cover;
         font-weight: bold;
         font-family: 'Hubot-Sans';
-        border: solid;
         border-radius: 100%;
     }
 
