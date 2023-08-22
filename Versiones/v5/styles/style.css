@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+:root{
+    --nav-color:#f1f1f1;
+    --neumorphism-grey: rgba(252, 252, 252, 0.432);
+    --neumorphism-soft-gray:#b1b1b1;
+    --neumorphism-creme: #ffffff;
+    --altura-secciones-footer: 12rem;
+}
+
 section {
     display: flex;
     height: 100vh;
@@ -46,7 +54,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     z-index: 999;
-    background-color: #f1f1f1;
+    background-color: var(--nav-color);
     padding: 0.5rem;
 }
 
@@ -264,8 +272,8 @@ nav>ul>li>a{
 #ul_cursos_img>div{
     border-radius: 150px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  9px 9px 18px #b1b1b1,
-                 -9px -9px 18px #ffffff;
+    box-shadow:  9px 9px 18px var(--neumorphism-grey),
+                 -9px -9px 18px var(--meumorphism-creme);
 }
 
 /* pantalla de carga inicio */
@@ -346,7 +354,10 @@ nav>ul>li>a{
 
 
     #cursos_img_admin:hover{
-        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        box-shadow: 0 0 0 200px var(--neumorphism-grey) inset;
+        border-radius: 175px;
+        box-shadow: inset 17px 17px 34px var(--neumorphism-soft-gray),
+                    inset -17px -17px 34px var(--neumorphism-creme);
     }
 
     #cursos_img_admin:hover p{
@@ -380,7 +391,10 @@ nav>ul>li>a{
     }
 
     #cursos_img_deporte:hover{
-        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        box-shadow: 0 0 0 200px var(--neumorphism-grey) inset;
+        border-radius: 175px;
+        box-shadow: inset 17px 17px 34px var(--neumorphism-soft-gray),
+                    inset -17px -17px 34px var(--neumorphism-creme);
     }
 
     #cursos_img_deporte:hover p{
@@ -414,7 +428,10 @@ nav>ul>li>a{
     }
 
     #cursos_img_tur:hover{
-        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        box-shadow: 0 0 0 200px var(--neumorphism-grey) inset;
+        border-radius: 175px;
+        box-shadow: inset 17px 17px 34px var(--neumorphism-soft-gray),
+                    inset -17px -17px 34px var(--neumorphism-creme);
     }
 
     #cursos_img_tur:hover p{
@@ -448,7 +465,10 @@ nav>ul>li>a{
     }
 
     #cursos_img_info:hover{
-        box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        box-shadow: 0 0 0 200px var(--neumorphism-grey) inset;
+        border-radius: 175px;
+        box-shadow: inset 17px 17px 34px var(--neumorphism-soft-gray),
+                    inset -17px -17px 34px var(--neumorphism-creme);
     }
 
     #cursos_img_info:hover p{
@@ -534,5 +554,97 @@ nav>ul>li>a{
 #encabezado-noticia-remodelacion{
     font-family: 'hubot-sans';
     font-size: 1rem;
+}
+
+.contenedor-historia{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Hubot-Sans';
+}
+
+.imagen-section1-historia{
+    width: 20rem;
+    border: solid;
+    border-radius: 1rem;
+}
+
+.historia{
+    width: 37rem;
+    margin-top: -4rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.historia::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    max-height: 20px;
+}
+
+.historia::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 140, 140);
+    border-radius: 20px;
+    border: 2px solid rgb(179, 178, 136);
+}
+
+.historia::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    width:0.5px;
+    height: 1rem; 
+}
+
+/*.body{
+    overflow-y: scroll;
+}
+*/
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    background-color: var(--nav-color);
+    font-family: 'Hubot-Sans';
+    gap: 4rem;
+}
+
+#footer>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 13rem;
+    margin-top: -3.5rem;
+    padding: 0.5rem;
+}
+
+#div-footer-logo>img{
+    width: 10rem;
+}
+
+#div-footer-logo>a{
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+#div-footer-redes>div{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+#div-footer-redes>div>div>a>img{
+    width: 1.3rem;
+    margin-bottom: -0.4rem;
+}
+
+#div-footer-redes>div>div>a{
+    text-decoration: none;
 }
 
