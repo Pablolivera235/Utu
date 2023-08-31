@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="stylesheet" href="./styles/style.css">
     <meta charset="UTF-8">
@@ -7,125 +8,139 @@
     <title>Inicio | Escuela Técnica Trinidad</title>
 
 </head>
+
 <body>
     <!-- pantalla de carga inicio -->
     <div class="wait-screen">
         <div class="wait-screen-message">
-          <img class="logo_pantalla_de_carga" src="./img/logo/logo-elegido.png">
+            <img class="logo_pantalla_de_carga" src="./img/logo/logo-elegido.png">
         </div>
-      </div>
-     <!-- pantalla de carga fin -->
+    </div>
+    <!-- pantalla de carga fin -->
 
     <nav>
         <a id="reiniciar" href="#"><img src="./img/logo/logo-elegido.png" id="logo"></a>
-        <ul >
+        <ul>
             <li><button onclick="redireccionarPagina('./pages/historia.html')">Historia</button></li>
             <li><button onclick="redireccionarPagina('./pages/utuencifras.html')"> UTU En Cifras</button></li>
             <li id="cursos"><button onclick="redireccionarPagina('./pages/cursos.html')">Cursos</button></li>
         </ul>
     </nav>
     <main id="contenedor-de-secciones">
-    <section>
-        <div class="cont_img_sec1" id="container_img_section1">
-            <div id="blured">
-        <div class="imagenes_corte">
-            <div id="div-img-1">
-            <img class="inicioimagenes" src="img/Actual.jpg" alt="utu_now">
+        <section>
+            <div class="cont_img_sec1" id="container_img_section1">
+                <div id="blured">
+                    <div class="imagenes_corte">
+                        <div id="div-img-1">
+                            <img class="inicioimagenes" src="img/Actual.jpg" alt="utu_now">
+                        </div>
+                        <div id="div-img-1">
+                            <img class="inicioimagenes" src="img/foto_utugood.jpeg" alt="utu_old">
+                        </div>
+                        <div id="div-img-1">
+                            <img class="inicioimagenes" src="img/foto_utu_degrad.jpeg" alt="utu_old_two">
+                        </div>
+                        <div id="div-img-1">
+                            <img class="inicioimagenes" src="img/planos.jpeg" alt="utu_planos">
+                        </div>
+                    </div>
+                    <h1 id="descripcion-seccion1"> Desde 1933: 90 Años educando al futuro </h1>
+                    <br><br>
+                    <button onclick="redireccionarPagina('./pages/historia.html')"> Aprender Más </button>
+                </div>
             </div>
-            <div id="div-img-1">
-            <img class="inicioimagenes" src="img/foto_utugood.jpeg" alt="utu_old">
-            </div>
-            <div id="div-img-1">
-            <img class="inicioimagenes" src="img/foto_utu_degrad.jpeg" alt="utu_old_two">
-            </div>
-            <div id="div-img-1">
-            <img class="inicioimagenes" src="img/planos.jpeg" alt="utu_planos">
-            </div>
-        </div>
-        <h1 id="descripcion-seccion1"> Desde 1933: 90 Años educando al futuro </h1>
-        <br><br>
-        <button onclick="redireccionarPagina('./pages/historia.html')"> Aprender Más </button>
-        </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="seccion-cursos">
-        <div id="contenedor_cursos">
-        <ul id="ul_cursos_img">
-        <div>
-        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_admin"><p> Administración</p></li>
-        </div>
-        <div>
-        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_deporte"><p> Deporte</p></li>
-        </div>
-        <div>
-        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_tur"><p> Turismo </p></li>
-        </div>
-        <div>
-        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_info"><p> Informática </p></li>
-        </div>
-        </ul>
-        <h1> Bachilleratos Disponibles</h1>
-        </div>
-    </section>
-
-    <section>
-        <h2 id="noticias-h2">
-            <span> Noticias Recientes </span>
-        </h2>
-        <div id="container-noticias">
-        <div id="containers-de-containers-noticias">
-        <div> </div>
-        <br>
-        <h3 id="encabezado-noticia-remodelacion"> Remodelación sala E.R.M.A </h3>
-        </div>
-        <div id="containers-de-containers-noticias">
-        <div> </div>
-        <br>
-        <h3 id="encabezado-noticia-remodelacion"> Creación de salones Container </h3>
-        </div>
-        <div id="containers-de-containers-noticias">
-        <div> </div>
-        <br>
-        <h3 id="encabezado-noticia-remodelacion"> Reacondicionamiento de salones 12 y 13 </h3>
-        </div>
-        <div id="containers-de-containers-noticias">
-        <div> </div>
-        <br>
-        <h3 id="encabezado-noticia-remodelacion"> Nuevo curso de informática </h3>
-        </div>
-        </div>  
-    </section>
-    <section id="footer">
-        <div id="div-footer-logo">
-        <img src="./img/logo/logo-elegido.png" alt="">
-        <br>
-        <h3>Escuela Técnica de Trinidad</h3>
-        <br>
-        <a href="https://www.google.com/maps/place/Escuela+T%C3%A9cnica+Trinidad/@-33.5163354,-56.8947576,15z/data=!4m6!3m5!1s0x95a6a03c394e579b:0xa8edff3b93a2224a!8m2!3d-33.5163354!4d-56.8947576!16s%2Fg%2F11b6lhvnkt?entry=ttu">25 de Agosto 427, 85000 <br> Trinidad, Departamento de Flores</a>
-        </div>
-        <div id="div-footer-contacto">
-            <h3>Contacto</h3>
-            <br>
-            <p>Teléfono: 4364 2426</p>
-            <p>Email: tecnicatrinidad@gmail.com</p>
-            <p></p>
-        </div>
-        <div id="div-footer-redes">
-            <h3>Redes</h3>
-            <br>
-            <div>
-                <div><a href="https://www.instagram.com/ututecnicatrinidad/?igshid=MzRlODBiNWFlZA%3D%3D"><img src="./img/redes/square-instagram.png" alt="">    @ututecnicatrinidad</a></div>
-                <div><a href="https://www.facebook.com/utu.trinidad.58/?locale=es_LA"><img src="./img/redes/square-facebook.png" alt="">   Utu Trinidad</a></div>
-                <div><a href=""><img src="./img/redes/square-whatsapp.png" alt=""></a></div>
+        <section id="seccion-cursos">
+            <div id="contenedor_cursos">
+                <ul id="ul_cursos_img">
+                    <div>
+                        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_admin">
+                            <p> Administración</p>
+                        </li>
+                    </div>
+                    <div>
+                        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_deporte">
+                            <p> Deporte</p>
+                        </li>
+                    </div>
+                    <div>
+                        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_tur">
+                            <p> Turismo </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li onclick="redireccionarPagina('./pages/cursos.html')" id="cursos_img_info">
+                            <p> Informática </p>
+                        </li>
+                    </div>
+                </ul>
+                <h1> Bachilleratos Disponibles</h1>
             </div>
-        </div>
-        <div id="div-footer-copyright">
-            <h3>Copyright</h3>
-            <p>Pablo Olivera®</p>
-        </div>
-    </section>
-</main>
+        </section>
+
+        <section>
+            <h2 id="noticias-h2">
+                <span> Noticias Recientes </span>
+            </h2>
+            <div id="container-noticias">
+                <div id="containers-de-containers-noticias">
+                    <div> </div>
+                    <br>
+                    <h3 id="encabezado-noticia-remodelacion"> Remodelación sala E.R.M.A </h3>
+                </div>
+                <div id="containers-de-containers-noticias">
+                    <div> </div>
+                    <br>
+                    <h3 id="encabezado-noticia-remodelacion"> Creación de salones Container </h3>
+                </div>
+                <div id="containers-de-containers-noticias">
+                    <div> </div>
+                    <br>
+                    <h3 id="encabezado-noticia-remodelacion"> Reacondicionamiento de salones 12 y 13 </h3>
+                </div>
+                <div id="containers-de-containers-noticias">
+                    <div> </div>
+                    <br>
+                    <h3 id="encabezado-noticia-remodelacion"> Nuevo curso de informática </h3>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div id="div-footer-logo">
+                <img src="./img/logo/logo-elegido.png" alt="">
+                <br>
+                <h3>Escuela Técnica de Trinidad</h3>
+                <br>
+                <a
+                    href="https://www.google.com/maps/place/Escuela+T%C3%A9cnica+Trinidad/@-33.5163354,-56.8947576,15z/data=!4m6!3m5!1s0x95a6a03c394e579b:0xa8edff3b93a2224a!8m2!3d-33.5163354!4d-56.8947576!16s%2Fg%2F11b6lhvnkt?entry=ttu">25
+                    de Agosto 427, 85000 <br> Trinidad, Departamento de Flores</a>
+            </div>
+            <div id="div-footer-contacto">
+                <h3>Contacto</h3>
+                <br>
+                <p>Teléfono: 4364 2426</p>
+                <p>Email: tecnicatrinidad@gmail.com</p>
+                <p></p>
+            </div>
+            <div id="div-footer-redes">
+                <h3>Redes</h3>
+                <br>
+                <div>
+                    <div><a href="https://www.instagram.com/ututecnicatrinidad/?igshid=MzRlODBiNWFlZA%3D%3D"><img
+                                src="./img/redes/square-instagram.png" alt=""> @ututecnicatrinidad</a></div>
+                    <div><a href="https://www.facebook.com/utu.trinidad.58/?locale=es_LA"><img
+                                src="./img/redes/square-facebook.png" alt=""> Utu Trinidad</a></div>
+                    <div><a href=""><img src="./img/redes/square-whatsapp.png" alt=""> 091 337 739</a></div>
+                </div>
+            </div>
+            <div id="div-footer-copyright">
+                <h3>Copyright</h3>
+                <p>Pablo Olivera®</p>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="./scripts/script.js"></script>
+
 </html>

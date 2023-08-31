@@ -282,6 +282,7 @@ nav>ul>li>a{
 
     #cursos_img_admin:hover{
         box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        border-radius: 175px;
     }
 
     #cursos_img_admin:hover p{
@@ -317,6 +318,7 @@ nav>ul>li>a{
 
     #cursos_img_deporte:hover{
         box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        border-radius: 175px;
     }
 
     #cursos_img_deporte:hover p{
@@ -352,6 +354,7 @@ nav>ul>li>a{
 
     #cursos_img_tur:hover{
         box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        border-radius: 175px;
     }
 
     #cursos_img_tur:hover p{
@@ -387,6 +390,7 @@ nav>ul>li>a{
 
     #cursos_img_info:hover{
         box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.432) inset;
+        border-radius: 175px;
     }
 
     #cursos_img_info:hover p{

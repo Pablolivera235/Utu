@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-:root{
-    --nav-color:#f1f1f1;
+:root {
+    --nav-color: #f1f1f1;
     --neumorphism-grey: rgba(252, 252, 252, 0.432);
-    --neumorphism-soft-gray:#b1b1b1;
+    --neumorphism-soft-gray: #b1b1b1;
     --neumorphism-creme: #ffffff;
     --altura-secciones-footer: 12rem;
 }
@@ -25,7 +25,7 @@ section {
     font-family: 'Hubot-Sans';
 }
 
-body{
+body {
     display: flex;
     justify-content: top;
     flex-direction: column;
@@ -33,17 +33,17 @@ body{
     overflow-y: hidden;
 }
 
-#container_img_section1>div>button{
+#container_img_section1>div>button {
     font-family: 'Hubot-Sans';
     font-weight: bold;
     padding: .7rem;
     font-size: 1rem;
-    border-radius:.5rem;
+    border-radius: .5rem;
     border: solid;
     background-color: transparent;
 }
 
-#container_img_section1>div>button:hover{
+#container_img_section1>div>button:hover {
     background-color: rgba(27, 148, 179, 0.726);
     color: #000000;
 }
@@ -59,15 +59,15 @@ nav {
     padding: 0.5rem;
 }
 
-#inicio{
+#inicio {
     margin-left: 1rem;
 }
 
-#cursos{
+#cursos {
     margin-right: 1rem;
 }
 
-nav>ul{
+nav>ul {
     display: flex;
     align-items: center;
     border-radius: 1rem;
@@ -75,33 +75,33 @@ nav>ul{
     gap: 0.5rem;
 }
 
-#contenedor_cursos>h1{
+#contenedor_cursos>h1 {
     padding: 3rem;
     font-weight: bold;
     font-family: 'Hubot-Sans';
 }
 
-#seccion-cursos{
+#seccion-cursos {
     /*background-color: lightblue;*/
 }
 
-nav>ul>li{
+nav>ul>li {
     padding: 0.7rem;
 }
 
-nav>ul>li>button{
+nav>ul>li>button {
     list-style: none;
     border: solid;
     border-radius: 0.5rem;
     border-color: transparent;
     padding: .8rem;
-    background:none;
+    background: none;
     font-weight: bold;
     font-size: 0.7rem;
     font-family: 'Hubot-Sans';
 }
 
-nav>ul>li>button:hover{
+nav>ul>li>button:hover {
     color: #000000;
     border: solid;
     border-color: rgb(0, 0, 0);
@@ -112,13 +112,13 @@ nav>ul>li>a>img {
     height: 20px;
 }
 
-nav>ul>li>a{
-   text-decoration: none;
-   color: black;
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
 }
 
 
-#container_img_section1{
+#container_img_section1 {
     display: flex;
     border: solid;
     width: 100%;
@@ -134,7 +134,7 @@ nav>ul>li>a{
 
 }
 
-#blured{
+#blured {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -151,7 +151,7 @@ nav>ul>li>a{
     gap: .2rem;
 }
 
-#div-img-1{
+#div-img-1 {
     display: flex;
     width: 10rem;
     height: 10rem;
@@ -164,7 +164,7 @@ nav>ul>li>a{
     align-items: center;
 }
 
-#div-img-1.pedro{
+#div-img-1.pedro {
     overflow: show;
     border: none;
 }
@@ -187,7 +187,7 @@ nav>ul>li>a{
     margin-left: -3.5rem;
     clip-path: none;
     border-radius: 1rem;
-    transform: scale(2 , 1.5);
+    transform: scale(2, 1.5);
     z-index: 1;
     border-width: 2px;
     width: 19rem;
@@ -197,12 +197,12 @@ nav>ul>li>a{
     -moz-transform: skew(15deg);
     -o-transform: skew(15deg);
     z-index: 1;
-    border:solid;
+    border: solid;
 }
 
 .imagenes_corte:hover .inicioimagenes:not(.hovered) {
     opacity: 0.7;
-    transform: none; 
+    transform: none;
     width: 13.5rem;
     margin-left: -2rem;
     height: 11rem;
@@ -214,7 +214,7 @@ nav>ul>li>a{
 }
 
 .imagenes_corte:not(:hover) .inicioimagenes {
-    transform: scale(1); 
+    transform: scale(1);
     width: 13.5rem;
     height: 11rem;
     transition: transform 0.5s ease;
@@ -226,7 +226,7 @@ nav>ul>li>a{
     border: none;
 }
 
-#div-img-1:not(:hover){
+#div-img-1:not(:hover) {
     display: flex;
     align-items: center;
     border: solid;
@@ -241,36 +241,37 @@ nav>ul>li>a{
     z-index: 9;
 }
 
-#logo{
+#logo {
     width: 4.8rem;
     height: 3.2rem;
 
 }
 
 
-#primera{
+#primera {
     margin-left: 2.8rem;
 }
 
-#descripcion-seccion1{
+#descripcion-seccion1 {
     margin-top: 3.5rem;
     z-index: 999;
     font-weight: bold;
     font-family: 'Hubot-Sans';
     font-size: 1.35rem;
 }
-#curos_img{
+
+#curos_img {
     width: 10em;
 }
 
-#ul_cursos_img{
+#ul_cursos_img {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 1.5rem;
 }
 
-#ul_cursos_img>div{
+#ul_cursos_img>div {
     border-radius: 150px;
     border: solid;
 }
@@ -278,194 +279,200 @@ nav>ul>li>a{
 /* pantalla de carga inicio */
 
 .wait-screen {
-    display: none; 
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: #fff;
     z-index: 9999;
     opacity: 100%;
-  }
+}
 
-  .wait-screen-message {
+.wait-screen-message {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-  }
+}
 
-  .logo_pantalla_de_carga{
+.logo_pantalla_de_carga {
     width: 33rem;
     height: 20rem;
- }
+}
 
- @keyframes cliper {
-    30%{
+@keyframes cliper {
+    30% {
         width: 33rem;
         height: 20rem;
     }
-    100%{
+
+    100% {
         width: 5rem;
         height: 3rem;
     }
 }
 
 @keyframes moveup {
-    30%{
+    30% {
         top: 50%;
         left: 50%;
     }
-    100%{
+
+    100% {
         top: 5%;
         left: 25%;
     }
 }
-  /* pantalla de carga fin */
 
-  /* hovers de los cursos inicio*/
+/* pantalla de carga fin */
 
-                                            /* Administración */
+/* hovers de los cursos inicio*/
 
-    #cursos_img_admin{
-        width:10em;
-        height: 10em;
-        transition: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/Cursos_iconos/Administracion.png);
-        background-position: center;
-        background-size: cover;
-        font-weight: bold;
-        font-family: 'Hubot-Sans';
-        border-radius: 100%;
-    }
+/* Administración */
 
-    #cursos_img_admin p{
-        opacity: 0;
-        transform: scale(0);
-        transition: 0.8s;
-        font-size: 1.1rem;
-        color: rgb(0, 0, 0);
-    }
+#cursos_img_admin {
+    width: 10em;
+    height: 10em;
+    transition: 0.9ss;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Cursos_iconos/Administracion.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+    border-radius: 100%;
+}
 
+#cursos_img_admin p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.9s;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
 
-    #cursos_img_admin:hover{
-        border-radius: 175px;
-    }
+#cursos_img_admin:hover {
+    box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.685) inset;
+    border-radius: 175px;
+}
 
-    #cursos_img_admin:hover p{
-        opacity: 1;
-        transform: scale(1);
-    }
+#cursos_img_admin:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
 
-                                                /* Deporte */
+/* Deporte */
 
-    #cursos_img_deporte{
-        width:10em;
-        height: 10em;
-        transition: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/Cursos_iconos/Deporte.png);
-        background-position: center;
-        background-size: cover;
-        font-weight: bold;
-        font-family: 'Hubot-Sans';
-        border-radius: 100%;
-    }
+#cursos_img_deporte {
+    width: 10em;
+    height: 10em;
+    transition: 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Cursos_iconos/Deporte.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+    border-radius: 100%;
+}
 
-    #cursos_img_deporte p{
-        opacity: 0;
-        transform: scale(0);
-        transition: 0.8s;
-        font-size: 1.1rem;
-        color: rgb(0, 0, 0);
-    }
+#cursos_img_deporte p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.9s;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
 
-    #cursos_img_deporte:hover{
-        border-radius: 175px;
-    }
+#cursos_img_deporte:hover {
+    border-radius: 175px;
+    box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.644) inset;
+}
 
-    #cursos_img_deporte:hover p{
-        opacity: 1;
-        transform: scale(1);
-    }
+#cursos_img_deporte:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
 
-                                                /* Turismo */
+/* Turismo */
 
-    #cursos_img_tur{
-        width:10em;
-        height: 10em;
-        transition: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/Cursos_iconos/Turismo.png);
-        background-position: center;
-        background-size: cover;
-        font-weight: bold;
-        font-family: 'Hubot-Sans';
-        border-radius: 100%;
-    }
+#cursos_img_tur {
+    width: 10em;
+    height: 10em;
+    transition: 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Cursos_iconos/Turismo.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+    border-radius: 100%;
+}
 
-    #cursos_img_tur p{
-        opacity: 0;
-        transform: scale(0);
-        transition: 0.8s;
-        font-size: 1.1rem;
-        color: rgb(0, 0, 0);
-    }
+#cursos_img_tur p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.9s;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
 
-    #cursos_img_tur:hover{
-        border-radius: 175px;
-    }
+#cursos_img_tur:hover {
+    border-radius: 175px;
+    box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.644) inset;
+}
 
-    #cursos_img_tur:hover p{
-        opacity: 1;
-        transform: scale(1);
-    }
+#cursos_img_tur:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
 
-                                                /* Informática */
+/* Informática */
 
-    #cursos_img_info{
-        width:10em;
-        height: 10em;
-        transition: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/Cursos_iconos/Informatica.png);
-        background-position: center;
-        background-size: cover;
-        font-weight: bold;
-        font-family: 'Hubot-Sans';
-        border-radius: 100%;
-    }
+#cursos_img_info {
+    width: 10em;
+    height: 10em;
+    transition: 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Cursos_iconos/Informatica.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+    border-radius: 100%;
+}
 
-    #cursos_img_info p{
-        opacity: 0;
-        transform: scale(0);
-        transition: 0.8s;
-        font-size: 1.1rem;
-        color: rgb(0, 0, 0);
-    }
+#cursos_img_info p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.9s;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
 
-    #cursos_img_info:hover{
-        border-radius: 175px;
-    }
+#cursos_img_info:hover {
+    border-radius: 175px;
+    box-shadow: 0 0 0 200px rgba(252, 252, 252, 0.644) inset;
+}
 
-    #cursos_img_info:hover p{
-        opacity: 1;
-        transform: scale(1);
-    }
+#cursos_img_info:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
 
-  /* hovers de los cursos fin*/
+/* hovers de los cursos fin*/
 
-  #container-noticias{
+#container-noticias {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,9 +480,9 @@ nav>ul>li>a{
     gap: 1rem;
     width: auto;
     height: auto;
-  }
+}
 
-  #containers-de-containers-noticias{
+#containers-de-containers-noticias {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,24 +490,24 @@ nav>ul>li>a{
     height: 18rem;
     /* border: solid;
     border-radius: 1rem; */
-  }
+}
 
-  #containers-de-containers-noticias>div{
+#containers-de-containers-noticias>div {
     border: solid;
     border-radius: 1rem;
     width: 12rem;
     height: 8.5rem;
-  }
+}
 
-  #contenedor-de-secciones{
+#contenedor-de-secciones {
     scroll-snap-type: y mandatory;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-  }
+}
 
-  #contenedor-de-secciones::-webkit-scrollbar {
+#contenedor-de-secciones::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
     max-height: 20px;
@@ -513,20 +520,20 @@ nav>ul>li>a{
 }
 
 #contenedor-de-secciones::-webkit-scrollbar-track {
-    border-radius: 10px; 
-    width:0.5px;
-    height: 1rem; 
+    border-radius: 10px;
+    width: 0.5px;
+    height: 1rem;
 }
 
-#contenedor-de-secciones-historia{
+#contenedor-de-secciones-historia {
     scroll-snap-type: y mandatory;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-  }
+}
 
-  #contenedor-de-secciones-historia::-webkit-scrollbar {
+#contenedor-de-secciones-historia::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
     max-height: 20px;
@@ -539,12 +546,12 @@ nav>ul>li>a{
 }
 
 #contenedor-de-secciones-historia::-webkit-scrollbar-track {
-    border-radius: 10px; 
-    width:0.5px;
-    height: 1rem; 
+    border-radius: 10px;
+    width: 0.5px;
+    height: 1rem;
 }
 
-#noticias-h2{
+#noticias-h2 {
     position: relative;
     border-top: solid 5px #e7eae8;
     font-size: 1.65em;
@@ -556,7 +563,7 @@ nav>ul>li>a{
     font-family: 'hubot-sans';
 }
 
-#noticias-h2>span{
+#noticias-h2>span {
     background: #fff;
     position: relative;
     display: inline-block;
@@ -564,17 +571,17 @@ nav>ul>li>a{
     padding: 0 1.25em 0 1.25em;
 }
 
-#encabezado-noticia-remodelacion{
+#encabezado-noticia-remodelacion {
     font-family: 'hubot-sans';
     font-size: 1rem;
 }
 
-#contenedor-history{
+#contenedor-history {
     border: solid;
     width: 40rem;
 }
 
-#años-historia{
+#años-historia {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -582,7 +589,25 @@ nav>ul>li>a{
     width: 20rem;
 }
 
-.contenedor-historia{
+#años-historia>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#años-historia>ul>li>button{
+    width: 4rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    font-family: 'hubot-sans';
+    font-weight: bold;
+}
+
+.contenedor-historia {
     display: flex;
     width: 100vw;
     align-items: center;
@@ -591,7 +616,7 @@ nav>ul>li>a{
     font-family: 'Hubot-Sans';
 }
 
-#contenedor-contenedores-historia{
+#contenedor-contenedores-historia {
     display: flex;
     border: solid;
     width: 100vw;
@@ -600,12 +625,12 @@ nav>ul>li>a{
     flex-direction: row;
 }
 
-#contenedor-contenedores-historia>div{
+#contenedor-contenedores-historia>div {
     border: solid;
 }
 
 
-.contenedor-historia-por-años{
+.contenedor-historia-por-años {
     display: flex;
     width: 41rem;
     align-items: center;
@@ -615,7 +640,7 @@ nav>ul>li>a{
     margin-left: 1rem;
 }
 
-#contenedor-imagen-historia{
+#contenedor-imagen-historia {
     height: 15rem;
     width: 40rem;
     border-radius: 1rem;
@@ -623,17 +648,17 @@ nav>ul>li>a{
     border: solid;
 }
 
-.contenedor-historia-por-años>div{
+.contenedor-historia-por-años>div {
     border: solid;
 }
 
-.imagen-section1-historia{
+.imagen-section1-historia {
     width: 28rem;
     border: solid;
     border-radius: 1rem;
 }
 
-.historia{
+.historia {
     width: 37rem;
     margin-top: -4rem;
     padding: 3rem;
@@ -654,9 +679,9 @@ nav>ul>li>a{
 }
 
 .historia::-webkit-scrollbar-track {
-    border-radius: 10px; 
-    width:0.5px;
-    height: 1rem; 
+    border-radius: 10px;
+    width: 0.5px;
+    height: 1rem;
 }
 
 /*.body{
@@ -664,7 +689,7 @@ nav>ul>li>a{
 }
 */
 
-#footer{
+#footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -674,7 +699,7 @@ nav>ul>li>a{
     gap: 2.5rem;
 }
 
-#footer>div{
+#footer>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,15 +709,16 @@ nav>ul>li>a{
     margin-top: -3.5rem;
 }
 
-#div-footer-logo>img{
+#div-footer-logo>img {
     width: 10rem;
 }
 
-#div-footer-logo>a{
+#div-footer-logo>a {
     font-size: 0.8rem;
     text-decoration: none;
 }
-#div-footer-redes>div{
+
+#div-footer-redes>div {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -700,25 +726,20 @@ nav>ul>li>a{
     align-items: flex-start;
 }
 
-#div-footer-redes>div>div>a>img{
+#div-footer-redes>div>div>a>img {
     width: 1.3rem;
     margin-bottom: -0.4rem;
 }
 
-#div-footer-redes>div>div>a{
+#div-footer-redes>div>div>a {
     text-decoration: none;
 }
 
-#div-footer-contacto>h3{
+#div-footer-contacto>h3 {
     margin-bottom: 1rem;
 }
 
-#div-footer-copyright>h3{
+#div-footer-copyright>h3 {
     margin-bottom: 1rem;
     margin-top: -2rem;
 }
-
-
-
-
-
