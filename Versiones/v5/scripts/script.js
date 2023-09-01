@@ -2,6 +2,17 @@ const images = document.querySelectorAll('.inicioimagenes');
 const bkgsec1 = document.querySelectorAll('.cont_img_sec1');
 const divimg1 = document.getElementById("div-img-1");
 
+//info de la seccion historia
+const nuevedoscero = document.getElementById('nuevedoscero');
+const nuevedosdos = document.getElementById('nuevedosdos');
+const nuevedosseis = document.getElementById('nuevedosseis');
+const nuevedosocho = document.getElementById('nuevedosocho');
+const nuevetrestres = document.getElementById('nuevetrestres');
+const nuevetresseis = document.getElementById('nuevetresseis');
+
+//arreglo con todas las historias
+const historias = [nuevedoscero, nuevedosdos, nuevedosseis, nuevedosocho, nuevetrestres, nuevetresseis];
+
 images.forEach((image) => {
   image.addEventListener('mouseenter', () => {
     images.forEach((img) => {
@@ -54,5 +65,15 @@ function redireccionarPagina(link) {
   window.location = link;
 }
 
-
-
+//funciones de desparicion de lo no seleccionado(todo menos algo)
+function selectHistoria(numero){
+  console.log("activated");
+  for (let i = 0; i < historias.length; i++) {
+    const element = historias[i];
+    if (numero == i) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+}
